@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>window.__pageStartedAt = performance.now();</script>
+  <meta name="theme-color" content="#febfca">
+  <meta name="description" content="Сведения о составе персональных данных, порядке их обработки, целях, сроках хранения и способах отзыва согласия.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://diana-nalog.ru/privacy.html">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:url" content="https://diana-nalog.ru/privacy.html">
+  <meta property="og:title" content="Политика конфиденциальности — Диана Берсенева">
+  <meta property="og:description" content="Порядок обработки персональных данных посетителей сайта и заявителей.">
+  <title>Политика конфиденциальности — Диана Берсенева</title>
+  <style>
+    :root {
+      --paper: #fff8f9;
+      --paper-deep: #fff0f3;
+      --white: #fff;
+      --ink: #2b2b2b;
+      --muted: #696166;
+      --line: #eadde0;
+      --accent: #febfca;
+      --accent-ink: #80545c;
+      --sans: "Segoe UI", Arial, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 84px; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--sans); font-size: 16px; line-height: 1.75; -webkit-font-smoothing: antialiased; }
+    .container { width: min(1200px, calc(100% - 64px)); margin-inline: auto; }
+    .reading-container { width: min(860px, calc(100% - 48px)); }
+    header { position: sticky; z-index: 20; top: 0; border-bottom: 1px solid rgba(43,43,43,.1); background: rgba(255,248,249,.95); backdrop-filter: blur(16px); }
+    .nav { min-height: 74px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+    .brand { display: inline-flex; align-items: center; gap: 11px; color: var(--ink); font-size: 13px; font-weight: 700; text-decoration: none; }
+    .brand-mark { width: 36px; height: 36px; display: grid; place-items: center; border: 0; border-radius: 11px; background: var(--accent); color: var(--ink); font-size: 20px; font-weight: 800; }
+    .back { min-height: 42px; display: inline-flex; align-items: center; justify-content: center; padding: 0 17px; border: 1px solid var(--ink); border-radius: 999px; background: var(--ink); color: #fff; font-size: 13px; font-weight: 700; text-decoration: none; transition: background-color .2s ease, border-color .2s ease, transform .2s ease; }
+    .back:hover { transform: translateY(-2px); border-color: #484848; background: #484848; }
+    main { padding: 58px 0 86px; }
+    .eyebrow { color: var(--accent-ink); font-size: 11px; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; }
+    h1, h2 { color: var(--ink); font-family: var(--sans); font-weight: 700; }
+    h1 { margin: 12px 0 16px; font-size: clamp(38px, 6vw, 56px); line-height: 1.1; }
+    .policy { padding: 34px clamp(22px, 5vw, 48px); border: 1px solid var(--line); border-radius: 8px; background: var(--white); }
+    h2 { margin: 30px 0 10px; font-size: 21px; line-height: 1.35; }
+    h2:first-child { margin-top: 0; }
+    h2:not(:first-child) { padding-top: 20px; border-top: 1px solid var(--line); }
+    p, li { color: #514b4e; font-size: 15px; }
+    p { margin: 0 0 14px; }
+    ul { margin: 8px 0 15px; padding-left: 22px; }
+    li { padding: 2px 0; }
+    .policy a { color: var(--accent-ink); text-underline-offset: 3px; }
+    .policy a:hover { color: var(--ink); }
+    .policy-updated { margin: 18px 0 0; color: var(--muted); font-size: 13px; text-align: right; }
+    footer { padding: 22px 0; border-top: 1px solid var(--line); background: var(--ink); color: #fff; font-size: 12px; }
+    @media (max-width: 540px) {
+      .container { width: calc(100% - 32px); }
+      .reading-container { width: calc(100% - 32px); }
+      main { padding: 42px 0 58px; }
+      .nav { min-height: 66px; gap: 12px; }
+      .brand { gap: 8px; font-size: 12px; }
+      .brand-mark { width: 34px; height: 34px; }
+      .back { min-height: 38px; padding-inline: 12px; font-size: 11px; }
+      .policy { padding: 25px 19px; }
+      h1 { font-size: 25px; hyphens: none; overflow-wrap: normal; }
+      h2 { font-size: 19px; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+    body > :not(.page-loader) { transition: opacity .3s ease, transform .3s ease; }
+    body.is-leaving > :not(.page-loader) { opacity: 0; transform: translateY(-6px); }
+    .page-loader {
+      position: fixed;
+      z-index: 200;
+      inset: 0;
+      display: grid;
+      place-items: center;
+      background: var(--paper);
+      color: var(--ink);
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity .35s ease, visibility .35s ease;
+      pointer-events: none;
+    }
+    .page-loader.is-visible { opacity: 1; visibility: visible; }
+    .page-loader-content { display: grid; justify-items: center; gap: 16px; font-size: 13px; font-weight: 600; }
+    .page-loader-mark {
+      width: 46px;
+      height: 46px;
+      display: grid;
+      place-items: center;
+      border: 1px solid rgba(43,43,43,.2);
+      border-radius: 50%;
+      background: var(--accent);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-size: 23px;
+      animation: loader-turn 1.8s ease-in-out infinite;
+    }
+    @keyframes loader-turn {
+      0%, 100% { transform: rotate(0) scale(1); }
+      50% { transform: rotate(180deg) scale(1.08); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      body > :not(.page-loader) { transition: none; }
+      body.is-leaving > :not(.page-loader) { transform: none; }
+      .page-loader-mark { animation: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-loader" id="page-loader" role="status" aria-live="polite" aria-hidden="true">
+    <div class="page-loader-content"><span class="page-loader-mark" aria-hidden="true">Д</span><span>Загружаем страницу…</span></div>
+  </div>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="index.html"><span>Диана Берсенева</span></a>
+      <a class="back" href="index.html">← Вернуться на сайт</a>
+    </div>
+  </header>
+  <main class="container reading-container">
+    <span class="eyebrow">Ваши данные — под защитой</span>
+    <h1>Политика<br>конфиденциальности</h1>
+    <article class="policy">
+      <h2>1. Кто обрабатывает данные</h2>
+      <p>Оператор персональных данных — Диана Берсенева. По вопросам обработки персональных данных можно обратиться по адресу <a href="mailto:Diana.berseneva.89@mail.ru">Diana.berseneva.89@mail.ru</a>.</p>
+
+      <h2>2. Какие данные и для чего используются</h2>
+      <p>В форме заявки могут быть указаны имя, телефон или адрес электронной почты, тема обращения и краткое описание вопроса. Эти сведения обрабатываются для ответа на обращение, связи с заявителем и обсуждения возможности оказания услуги.</p>
+      <p>В форме не следует указывать паспортные данные, сведения о здоровье, банковские реквизиты, данные третьих лиц или иную избыточную конфиденциальную информацию.</p>
+
+      <h2>3. Как передаётся заявка</h2>
+      <p>Данные из формы не отправляются автоматически на сервер и не сохраняются на сайте. После нажатия кнопки пользователь может открыть почтовое приложение с подготовленным письмом на адрес Оператора. Данные передаются Оператору только после самостоятельной отправки письма.</p>
+      <p>После отправки письма обработка и хранение сообщения также могут осуществляться используемым отправителем почтовым сервисом и почтовым сервисом получателя в соответствии с их правилами.</p>
+
+      <h2>4. Основание обработки</h2>
+      <p>Отправка заявки подтверждает согласие заявителя на обработку указанных в ней персональных данных для ответа на обращение. Согласие может быть отозвано путём направления обращения Оператору по электронной почте. Отзыв согласия не влияет на обработку, осуществлявшуюся на законном основании до его получения.</p>
+
+      <h2>5. Срок хранения и защита</h2>
+      <p>Оператор хранит полученные по электронной почте данные только в течение срока, необходимого для ответа на обращение и взаимодействия по нему, если более длительный срок хранения не предусмотрен законом. Оператор принимает разумные меры для защиты данных от неправомерного доступа, изменения, раскрытия или уничтожения.</p>
+
+      <h2>6. Передача третьим лицам</h2>
+      <p>Оператор не продаёт персональные данные и не раскрывает их третьим лицам, за исключением случаев, когда передача необходима для ответа на запрос, предусмотрена законодательством или осуществляется с согласия субъекта персональных данных.</p>
+
+      <h2>7. Ваши права</h2>
+      <p>Субъект персональных данных вправе запросить сведения об обработке персональных данных, потребовать их исправления или удаления, а также отозвать согласие. Для этого необходимо направить обращение по адресу <a href="mailto:Diana.berseneva.89@mail.ru">Diana.berseneva.89@mail.ru</a>.</p>
+
+      <h2>8. Файлы cookie и аналитика</h2>
+      <p>На сайте не используются формы с серверным хранением, рекламные пиксели или инструменты веб-аналитики. При открытии сайта технические данные могут обрабатываться инфраструктурой хостинга.</p>
+
+      <h2>9. Обновление политики</h2>
+      <p>Оператор вправе вносить изменения в настоящую политику. Актуальная редакция размещается на этой странице.</p>
+
+    </article>
+    <p class="policy-updated">Дата последнего обновления: 23.10.2026</p>
+  </main>
+  <footer><div class="container">© <span id="year">2026</span> Диана Берсенева</div></footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    const pageLoader = document.getElementById("page-loader");
+    let loaderShownAt = 0;
+    const showPageLoader = () => {
+      loaderShownAt = performance.now();
+      pageLoader.classList.add("is-visible");
+      pageLoader.setAttribute("aria-hidden", "false");
+    };
+    const hidePageLoader = () => {
+      const minimumVisibleTime = loaderShownAt ? Math.max(0, 250 - (performance.now() - loaderShownAt)) : 0;
+      window.setTimeout(() => {
+        pageLoader.classList.remove("is-visible");
+        pageLoader.setAttribute("aria-hidden", "true");
+      }, minimumVisibleTime);
+    };
+    const loaderDelay = Math.max(0, 500 - (performance.now() - window.__pageStartedAt));
+    const loaderTimer = window.setTimeout(() => {
+      if (document.readyState !== "complete") showPageLoader();
+    }, loaderDelay);
+    window.addEventListener("load", () => {
+      window.clearTimeout(loaderTimer);
+      hidePageLoader();
+    }, { once: true });
+    document.addEventListener("click", (event) => {
+      if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+      const link = event.target.closest("a[href]");
+      if (!link || link.target && link.target !== "_self" || link.hasAttribute("download")) return;
+      const destination = new URL(link.href, window.location.href);
+      if (destination.origin !== window.location.origin || destination.pathname === window.location.pathname || destination.hash) return;
+      event.preventDefault();
+      document.body.classList.add("is-leaving");
+      window.setTimeout(() => window.location.assign(destination.href), 300);
+    });
+  </script>
+</body>
+</html>
