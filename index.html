@@ -78,14 +78,17 @@
     .text-link { display: inline-flex; align-items: center; gap: 8px; color: var(--ink); font-size: 15px; font-weight: 700; text-decoration: none; }
     .text-link svg { color: var(--accent); transition: transform .2s ease; }
     .text-link:hover svg { transform: translateX(4px); }
-    .hero-facts { display: flex; flex-wrap: wrap; gap: 10px 23px; margin-top: 33px; color: #6f6e65; font-size: 15px; }
+    .hero-facts { display: flex; flex-wrap: wrap; gap: 8px 24px; margin-top: 36px; color: #6f6e65; font-size: 15px; }
     .hero-facts span { display: inline-flex; align-items: center; gap: 8px; }
+
+
+
     .check-dot { width: 26px; height: 26px; display: inline-grid; place-items: center; border-radius: 50%; background: #e5ebe1; color: #597150; font-size: 14px; font-weight: 700; }
     .hero-visual { position: relative; min-height: 510px; display: flex; align-items: center; justify-content: center; }
     .portrait-frame { position: relative; width: min(100%, 475px); height: 510px; overflow: hidden; border-radius: 48% 48% 4px 4px; background: #e8ded2; }
     .portrait-frame::after { position: absolute; inset: 0; border: 1px solid rgba(255,255,255,.36); border-radius: inherit; content: ""; pointer-events: none; }
     .portrait-frame img { width: 100%; height: 100%; display: block; object-fit: cover; object-position: 50% 36%; }
-    .portrait-note { position: absolute; right: -4px; bottom: 43px; max-width: 218px; padding: 17px 19px; border: 1px solid rgba(41,41,35,.06); background: var(--white); box-shadow: 0 12px 38px rgba(41,35,24,.1); }
+    .portrait-note { position: absolute; right: -4px; bottom: 43px; max-width: 290px; padding: 17px 19px; border: 1px solid rgba(41,41,35,.06); background: var(--white); box-shadow: 0 12px 38px rgba(41,35,24,.1); }
     .portrait-note strong { display: block; font-family: var(--serif); font-size: 19px; font-weight: 500; line-height: 1.3; }
     .portrait-note span { display: block; margin-top: 4px; color: var(--muted); font-size: 15px; }
     .round-seal { position: absolute; top: 47px; left: -12px; width: 100px; height: 100px; display: grid; place-items: center; border: 1px solid rgba(185,81,56,.24); border-radius: 50%; background: var(--paper); color: var(--accent); font-family: var(--serif); font-size: 17px; line-height: 1.08; text-align: center; transform: rotate(-10deg); }
@@ -113,7 +116,7 @@
     .service-card p { margin-bottom: 20px; color: var(--muted); font-size: 15px; line-height: 1.65; }
     .service-price { margin-top: auto; padding-top: 14px; border-top: 1px solid #eee9e1; color: var(--accent); font-size: 15px; font-weight: 700; }
     .bonus { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 24px; margin-top: 20px; padding: 20px 25px; background: var(--sage); }
-    .bonus-label { display: block; margin-bottom: 2px; color: #587050; font-size: 28px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+    .bonus-label { display: block; margin-bottom: 2px; color: #000000; font-size: 28px; font-weight: 700; letter-spacing: .12em;  }
     .bonus strong { font-size: 28px; }
     .bonus p { margin: 4px 0 0; color: #656e60; font-size: 28px; }
     .bonus-mark { position: relative; width: 47px; height: 47px; display: grid; place-items: center; border: 1px solid rgba(88,112,80,.22); border-radius: 50%; color: #587050; font-size: 0; line-height: 1; }
@@ -308,14 +311,14 @@
     .hero .button:hover { border-color: #d8f78e; background: #d8f78e; }
     .hero .text-link { color: #f8f8ee; }
     .hero .text-link svg { color: var(--accent); }
-    .hero-facts { column-gap: 17px; color: #d1dfd6; }
+    .hero-facts { column-gap: 15px; color: #d1dfd6; }
     .hero-facts span { font-size: 15px; }
     .check-dot { background: rgba(196,237,99,.15); color: var(--accent); }
     .hero-visual { min-height: 480px; }
     .portrait-frame { width: min(100%, 465px); height: 462px; border-radius: 80px; background: #8c9987; box-shadow: 22px 22px 0 rgba(196,237,99,.13); }
     .portrait-frame img { object-position: 50% 34%; animation: portraitDrift 18s ease-in-out infinite alternate; }
     .portrait-frame::after { border: 1px solid rgba(255,255,255,.26); }
-    .portrait-note { right: -20px; bottom: 30px; max-width: 225px; border: 0; border-radius: 15px; background: var(--accent); box-shadow: 0 18px 46px rgba(0,0,0,.2); color: var(--ink); animation: floatCard 5s ease-in-out infinite; }
+    .portrait-note { right: -20px; bottom: 30px; max-width: 310px; border: 0; border-radius: 15px; background: var(--accent); box-shadow: 0 18px 46px rgba(0,0,0,.2); color: var(--ink); animation: floatCard 5s ease-in-out infinite; }
     .portrait-note span { color: #40513b; }
     .round-seal { top: 24px; left: -34px; border: 0; background: var(--accent); color: var(--ink); font-family: var(--sans); font-weight: 800; transform: rotate(-11deg); animation: sealBreathe 4s ease-in-out infinite; }
     .round-seal small { color: #41533b; font-weight: 700; }
@@ -389,7 +392,7 @@
     .hero-copy.reveal.is-visible h1 { animation: riseIn .75s .18s both; }
     .hero-copy.reveal.is-visible > p { animation: riseIn .75s .28s both; }
     .hero-copy.reveal.is-visible .hero-actions { animation: riseIn .75s .38s both; }
-    .hero-copy.reveal.is-visible .hero-facts { animation: riseIn .75s .48s both; }
+    .hero-copy.reveal.is-visible .hero-facts { animation: riseIn .95s .48s both; }
     .service-card:nth-child(1) { transition-delay: .04s; }
     .service-card:nth-child(2) { transition-delay: .13s; }
     .service-card:nth-child(3) { transition-delay: .22s; }
@@ -1161,8 +1164,9 @@
     .service-card.is-primary .service-price { border-color: rgba(81, 0, 14, .2); color: var(--accent); }
     .service-icon { background: #eaf5ff; color: var(--accent); }
     .service-num, .service-price { color: var(--accent); }
-    .bonus, .about { background: #edf7ff; }
-    .bonus-label, .bonus-mark { color: var(--accent); }
+    .bonus { background: #d3eafb; }
+    .about { background: #eaf5ff; }
+    .bonus-label, .bonus-mark { color: #2b2022; }
     .bonus-mark { border-color: #b6d8f3; }
     .about::after, .contact::before { border-color: rgba(81, 0, 14, .14); }
     .about-photo::before { border-color: var(--primary); }
@@ -1219,7 +1223,7 @@
       <nav class="nav-links" aria-label="Основная навигация">
         <a href="#services">УСЛУГИ</a>
         <a href="#about">ОБО МНЕ</a>
-        <a href="#process">КАК РАБОТАЮ</a>
+        <a href="#reviews">ОТЗЫВЫ</a>
         <a href="#faq">ВОПРОСЫ</a>
       </nav>
       <a class="nav-cta" href="#contact">Оставить заявку <span aria-hidden="true">↗</span></a>
@@ -1247,7 +1251,7 @@
         <div class="hero-visual">
           <div class="portrait-frame"><img src="photo_2026-02-03_21-45-32.jpg" alt="Диана Берсенева, налоговый консультант" fetchpriority="high"></div>
           <div class="round-seal"><span>Быстро<small>и качественно</small></span></div>
-          <div class="portrait-note"><strong>Возврат налогов<br>без лишней тревоги</strong><span>Разберёмся вместе — шаг за шагом</span></div>
+          <div class="portrait-note"><strong>Возврат налогов <br>без лишней тревоги</strong><span>Разберёмся вместе — шаг за шагом</span></div>
         </div>
       </div>
     </section>
@@ -1260,9 +1264,9 @@
       </div>
     </div>
 
-    <section class="section" id="services">
-      <div class="container">
-        <div class="section-heading reveal">
+    <section class="section" >
+      <div class="container" id="services">
+        <div class="section-heading reveal" >
           <div><h2>С чем могу помочь</h2></div>
         </div>
         <div class="services-grid">
@@ -1279,7 +1283,7 @@
             <div class="service-price">Стоимость — после оценки ситуации</div>
           </article>
           <article class="service-card reveal">
-            <div class="service-top"><span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="m3 10 9-6 9 6M5 10v9m4-9v9m6-9v9m4-9v9M3 20h18M15.5 6.8h.01" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+            <div class="service-top"><span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" xmlns="http://w3.org"><path d="M16.5 6.5L7.5 17.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="8.5" cy="8.5" r="2.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="15.5" cy="15.5" r="2.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
             <h3>Возврат НДФЛ по ипотечным процентам</h3>
             <p>Помогу оформить возврат налога по уплаченным процентам по ипотеке.</p>
             <div class="service-price">Стоимость — после оценки ситуации</div>
@@ -1309,7 +1313,7 @@
             <div class="service-price">Стоимость — после оценки ситуации</div>
           </article>
           <article class="service-card reveal">
-            <div class="service-top"><span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><circle cx="14.5" cy="4.5" r="2" stroke="currentColor" stroke-width="1.5"/><path d="m12 8-3 4 4 2 2 6m-6-8-4 1-2 4m7-3 4-3 4 2m-9 7-3 2m10-4 3 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+            <div class="service-top"><span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" xmlns="http://w3.org"><path d="M3 12H21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><rect x="6" y="7" width="1.5" height="10" rx="0.5" fill="currentColor"/><rect x="8.5" y="6" width="1.5" height="12" rx="0.5" fill="currentColor"/><rect x="14" y="6" width="1.5" height="12" rx="0.5" fill="currentColor"/><rect x="16.5" y="7" width="1.5" height="10" rx="0.5" fill="currentColor"/><path d="M5 10.5V13.5M19 10.5V13.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span></div>
             <h3>Вычет на спорт</h3>
             <p>Помогу оформить вычет за спортивные занятия и абонементы в спортзал.</p>
             <div class="service-price">Стоимость — после оценки ситуации</div>
@@ -1322,7 +1326,7 @@
           </article>
         </div>
         <div class="bonus reveal">
-          <div><span class="bonus-label">БОНУС ДЛЯ СЕМЬИ</span><strong>При заказе декларации оформлю налоговый вычет на детей бесплатно</strong><p>Обсудим, подходит ли это предложение для вашей ситуации.</p></div>
+          <div><span class="bonus-label">Бонус для семьи</span><strong>При заказе декларации оформлю налоговый вычет на детей бесплатно</strong><p>*Обсудим, подходит ли это предложение для вашей ситуации.</p></div>
           <span class="bonus-mark" aria-hidden="true"></span>
         </div>
       </div>
@@ -1374,9 +1378,9 @@
       </div>
     </section>
 
-    <section class="section reviews" id="reviews">
+    <section class="section reviews" >
       <div class="container">
-        <div class="section-heading reveal">
+        <div class="section-heading reveal" id="reviews">
           <div><h2>Отзывы клиентов</h2></div>
          
         </div>
@@ -1403,15 +1407,16 @@
           
         </div>
         <div class="process-grid">
-          <article class="step reveal"><span class="step-number">01</span><h3>Знакомимся</h3><p>Вы оставляете заявку и коротко описываете свою ситуацию.</p></article>
-          <article class="step reveal delay-1"><span class="step-number">02</span><h3>Разбираем задачу</h3><p>Уточняю детали, документы и объясняю, чем могу помочь.</p></article>
-          <article class="step reveal delay-2"><span class="step-number">03</span><h3>Готовлю документы</h3><p>Согласуем стоимость — и я приступаю к работе.</p></article>
-          <article class="step reveal delay-3"><span class="step-number">04</span><h3>Остаюсь на связи</h3><p>Сопровождаю вас до зачисления денег на карту, если положен возврат.</p></article>
+          <article class="step reveal"><span class="step-number">01</span><h3>Прием заявки</h3><p>Вы оставляете заявку<br>и коротко описываете свою ситуацию.</p></article>
+          <article class="step reveal delay-1"><span class="step-number">02</span><h3>Знакомство и аудит</h3><p>Уточняю детали, документы<br> и объясняю, чем могу помочь.</p></article>
+          <article class="step reveal delay-2"><span class="step-number">03</span><h3>Подготовка и подача документов</h3><p>Согласуем стоимость — <br>и я приступаю к работе.</p></article>
+          <article class="step reveal delay-3"><span class="step-number">04</span><h3>Сопровождение и получение средств</h3><p>Сопровождаю вас<br> до зачисления средств.</p></article>
         </div>
       </div>
     </section>
 
-    <section class="faq" id="faq">
+    <section class="faq" >
+      <div id="faq"><br><br>
       <div class="container faq-grid">
         <div class="faq-title reveal"><h2>Часто задаваемые вопросы</h2><p>Не нашли ответ? Оставьте заявку — обсудим её лично.</p><a class="text-link" href="#contact">Задать вопрос <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
         <div class="faq-list reveal delay-1">
@@ -1437,9 +1442,11 @@
           </div>
         </div>
       </div>
+      </div>
     </section>
 
-    <section class="contact" id="contact">
+    <section class="contact" >
+        <div id="contact"><br><br>
       <div class="container contact-grid">
         <div class="contact-copy reveal">
           <h2>Первый шаг —<br>консультация</h2>
@@ -1480,6 +1487,7 @@
           </button>
           <p class="form-message" id="form-message" aria-live="polite"></p>
         </form>
+      </div>
       </div>
     </section>
   </main>
@@ -1714,7 +1722,7 @@
             .from(heroCopy.querySelector("h1 em"), { scale: .82, rotation: -7, duration: .8, ease: "back.out(1.7)" }, .35)
             .from(heroCopy.querySelector(":scope > p"), { autoAlpha: 0, y: 20, duration: .75 }, .3)
             .from(heroCopy.querySelectorAll(".hero-actions > *"), { autoAlpha: 0, stagger: .12, duration: .65 }, .48)
-            .from(heroCopy.querySelectorAll(".hero-facts > span"), { autoAlpha: 0, y: 12, stagger: .08, duration: .55 }, .68)
+            .from(heroCopy.querySelectorAll(".hero-facts > span"), { autoAlpha: 0, y: 16, stagger: .05, duration: .55 }, 1)
             .fromTo(heroVisual, { autoAlpha: 0, y: 28 }, { autoAlpha: 1, y: 0, duration: 1.15, ease: "expo.out" }, .12)
             .from(".round-seal", { autoAlpha: 0, scale: .55, rotation: -24, duration: .8, ease: "back.out(1.6)" }, .72)
             .from(".portrait-note", { autoAlpha: 0, y: 24, scale: .92, duration: .75, ease: "back.out(1.4)" }, .88);
