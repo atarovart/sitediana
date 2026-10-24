@@ -1,0 +1,9 @@
+ШРИФТЫ И ЛИЦЕНЗИИ
+
+Сайт подключает Manrope и Source Serif 4 через Google Fonts. Файлы шрифтов не встроены в этот архив; они загружаются браузером с Google Fonts.
+
+Обе гарнитуры распространяются по лицензии SIL Open Font License 1.1 (OFL). Она допускает использование в коммерческих и некоммерческих проектах при соблюдении условий лицензии; это открытая лицензия, а не отсутствие авторского права.
+
+Manrope — https://github.com/google/fonts/tree/main/ofl/manrope
+Source Serif 4 — https://github.com/google/fonts/tree/main/ofl/sourceserif4
+Полный текст SIL OFL 1.1 — https://openfontlicense.org/

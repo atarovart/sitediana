@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script>window.__pageStartedAt = performance.now();</script>
-  <meta name="theme-color" content="#febfca">
+  <meta name="theme-color" content="#bde0ff">
   <meta name="description" content="Сведения о составе персональных данных, порядке их обработки, целях, сроках хранения и способах отзыва согласия.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://diana-nalog.ru/privacy.html">
@@ -13,54 +13,60 @@
   <meta property="og:url" content="https://diana-nalog.ru/privacy.html">
   <meta property="og:title" content="Политика конфиденциальности — Диана Берсенева">
   <meta property="og:description" content="Порядок обработки персональных данных посетителей сайта и заявителей.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Source+Serif+4:wght@400;500;600;700&display=swap" rel="stylesheet">
   <title>Политика конфиденциальности — Диана Берсенева</title>
   <style>
     :root {
-      --paper: #fff8f9;
-      --paper-deep: #fff0f3;
-      --white: #fff;
-      --ink: #2b2b2b;
-      --muted: #696166;
-      --line: #eadde0;
-      --accent: #febfca;
-      --accent-ink: #80545c;
-      --sans: "Segoe UI", Arial, sans-serif;
+      --paper: #f6fbff;
+      --paper-deep: #eaf5ff;
+      --white: #ffffff;
+      --ink: #2b2022;
+      --muted: #5d5154;
+      --line: #d6e8f7;
+      --primary: #bde0ff;
+      --accent: #51000e;
+      --accent-dark: #390009;
+      --accent-ink: #51000e;
+      --serif: "Source Serif 4", serif;
+      --sans: "Manrope", sans-serif;
     }
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; scroll-padding-top: 84px; }
-    body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--sans); font-size: 16px; line-height: 1.75; -webkit-font-smoothing: antialiased; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--sans); font-size: 17px; line-height: 1.75; -webkit-font-smoothing: antialiased; }
     .container { width: min(1200px, calc(100% - 64px)); margin-inline: auto; }
     .reading-container { width: min(860px, calc(100% - 48px)); }
-    header { position: sticky; z-index: 20; top: 0; border-bottom: 1px solid rgba(43,43,43,.1); background: rgba(255,248,249,.95); backdrop-filter: blur(16px); }
+    header { position: sticky; z-index: 20; top: 0; border-bottom: 1px solid rgba(81,0,14,.12); background: rgba(246,251,255,.96); backdrop-filter: blur(16px); }
     .nav { min-height: 74px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
-    .brand { display: inline-flex; align-items: center; gap: 11px; color: var(--ink); font-size: 13px; font-weight: 700; text-decoration: none; }
-    .brand-mark { width: 36px; height: 36px; display: grid; place-items: center; border: 0; border-radius: 11px; background: var(--accent); color: var(--ink); font-size: 20px; font-weight: 800; }
-    .back { min-height: 42px; display: inline-flex; align-items: center; justify-content: center; padding: 0 17px; border: 1px solid var(--ink); border-radius: 999px; background: var(--ink); color: #fff; font-size: 13px; font-weight: 700; text-decoration: none; transition: background-color .2s ease, border-color .2s ease, transform .2s ease; }
-    .back:hover { transform: translateY(-2px); border-color: #484848; background: #484848; }
+    .brand { display: inline-flex; align-items: center; gap: 11px; color: var(--ink); font-size: 15px; font-weight: 700; text-decoration: none; }
+    .brand-mark { width: 36px; height: 36px; display: grid; place-items: center; border: 0; border-radius: 11px; background: var(--primary); color: var(--accent); font-size: 20px; font-weight: 800; }
+    .back { min-height: 42px; display: inline-flex; align-items: center; justify-content: center; padding: 0 17px; border: 1px solid var(--ink); border-radius: 999px; background: var(--ink); color: #fff; font-size: 14px; font-weight: 700; text-decoration: none; transition: background-color .2s ease, border-color .2s ease, transform .2s ease; }
+    .back:hover { transform: translateY(-2px); border-color: var(--accent-dark); background: var(--accent-dark); }
     main { padding: 58px 0 86px; }
-    .eyebrow { color: var(--accent-ink); font-size: 11px; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; }
+    .eyebrow { color: var(--accent-ink); font-size: 15px; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; }
     h1, h2 { color: var(--ink); font-family: var(--sans); font-weight: 700; }
     h1 { margin: 12px 0 16px; font-size: clamp(38px, 6vw, 56px); line-height: 1.1; }
     .policy { padding: 34px clamp(22px, 5vw, 48px); border: 1px solid var(--line); border-radius: 8px; background: var(--white); }
-    h2 { margin: 30px 0 10px; font-size: 21px; line-height: 1.35; }
+    h2 { margin: 30px 0 10px; font-size: 23px; line-height: 1.35; }
     h2:first-child { margin-top: 0; }
     h2:not(:first-child) { padding-top: 20px; border-top: 1px solid var(--line); }
-    p, li { color: #514b4e; font-size: 15px; }
+    p, li { color: #44373a; font-size: 16px; }
     p { margin: 0 0 14px; }
     ul { margin: 8px 0 15px; padding-left: 22px; }
     li { padding: 2px 0; }
-    .policy a { color: var(--accent-ink); text-underline-offset: 3px; }
+    .policy a { color: var(--accent); text-underline-offset: 3px; }
     .policy a:hover { color: var(--ink); }
-    .policy-updated { margin: 18px 0 0; color: var(--muted); font-size: 13px; text-align: right; }
-    footer { padding: 22px 0; border-top: 1px solid var(--line); background: var(--ink); color: #fff; font-size: 12px; }
+    .policy-updated { margin: 18px 0 0; color: var(--muted); font-size: 14px; text-align: right; }
+    footer { padding: 22px 0; border-top: 1px solid var(--accent); background: var(--accent); color: #fff; font-size: 14px; }
     @media (max-width: 540px) {
       .container { width: calc(100% - 32px); }
       .reading-container { width: calc(100% - 32px); }
       main { padding: 42px 0 58px; }
       .nav { min-height: 66px; gap: 12px; }
-      .brand { gap: 8px; font-size: 12px; }
+      .brand { gap: 8px; font-size: 14px; }
       .brand-mark { width: 34px; height: 34px; }
-      .back { min-height: 38px; padding-inline: 12px; font-size: 11px; }
+      .back { min-height: 38px; padding-inline: 12px; font-size: 15px; }
       .policy { padding: 25px 19px; }
       h1 { font-size: 25px; hyphens: none; overflow-wrap: normal; }
       h2 { font-size: 19px; }
@@ -82,16 +88,16 @@
       pointer-events: none;
     }
     .page-loader.is-visible { opacity: 1; visibility: visible; }
-    .page-loader-content { display: grid; justify-items: center; gap: 16px; font-size: 13px; font-weight: 600; }
+    .page-loader-content { display: grid; justify-items: center; gap: 16px; font-size: 15px; font-weight: 600; }
     .page-loader-mark {
       width: 46px;
       height: 46px;
       display: grid;
       place-items: center;
-      border: 1px solid rgba(43,43,43,.2);
+      border: 1px solid rgba(81,0,14,.22);
       border-radius: 50%;
-      background: var(--accent);
-      color: var(--ink);
+      background: var(--primary);
+      color: var(--accent);
       font-family: var(--sans);
       font-size: 23px;
       animation: loader-turn 1.8s ease-in-out infinite;
@@ -106,6 +112,26 @@
       .page-loader-mark { animation: none; }
     }
   </style>
+
+  <style id="brand-refresh">
+    :root { --paper: #f6fbff; --paper-deep: #eaf5ff; --white: #fff; --ink: #2b2022; --muted: #5d5154; --line: #d6e8f7; --primary: #bde0ff; --accent: #51000e; --accent-dark: #390009; --accent-ink: #51000e; --sans: "Manrope", sans-serif; --serif: "Source Serif 4", serif; }
+    body { background: var(--paper); color: var(--ink); font-family: var(--sans); }
+    header { border-bottom-color: rgba(81, 0, 14, .12); background: rgba(246, 251, 255, .96); }
+    .brand-mark { background: var(--primary); color: var(--accent); }
+    .back { border-color: var(--accent); background: var(--accent); color: #fff; }
+    .back:hover { border-color: var(--accent-dark); background: var(--accent-dark); }
+    .eyebrow { color: var(--accent); }
+    h1, h2 { color: var(--ink); font-family: var(--sans); }
+    .policy { border-color: var(--line); background: var(--white); }
+    h2:not(:first-child) { border-top-color: var(--line); }
+    p, li { color: #44373a; }
+    .policy a { color: var(--accent); }
+    .policy a:hover { color: var(--accent-dark); }
+    footer { border-top-color: var(--accent); background: var(--accent); color: #fff; }
+    .page-loader { background: var(--paper); color: var(--ink); }
+    .page-loader-mark { border-color: rgba(81, 0, 14, .22); background: var(--primary); color: var(--accent); }
+  </style>
+
 </head>
 <body>
   <div class="page-loader" id="page-loader" role="status" aria-live="polite" aria-hidden="true">
@@ -118,11 +144,10 @@
     </div>
   </header>
   <main class="container reading-container">
-    <span class="eyebrow">Ваши данные — под защитой</span>
     <h1>Политика<br>конфиденциальности</h1>
     <article class="policy">
       <h2>1. Кто обрабатывает данные</h2>
-      <p>Оператор персональных данных — Диана Берсенева. По вопросам обработки персональных данных можно обратиться по адресу <a href="mailto:Diana.berseneva.89@mail.ru">Diana.berseneva.89@mail.ru</a>.</p>
+      <p>Оператор персональных данных — Берсенева Диана Резвановна, ИНН 552102009770. По вопросам обработки персональных данных можно обратиться по адресу <a href="mailto:Diana.berseneva.89@mail.ru">Diana.berseneva.89@mail.ru</a>.</p>
 
       <h2>2. Какие данные и для чего используются</h2>
       <p>В форме заявки могут быть указаны имя, телефон или адрес электронной почты, тема обращения и краткое описание вопроса. Эти сведения обрабатываются для ответа на обращение, связи с заявителем и обсуждения возможности оказания услуги.</p>
