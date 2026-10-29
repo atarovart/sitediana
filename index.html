@@ -655,6 +655,7 @@
       .service-card p { font-size: 15px; }
       .faq-answer p { font-size: 15px; }
       .portrait-note span { font-size: 15px; }
+      .footer-brand { font-size: 15px;  max-width: 260px;}
     }
   </style>
   <style>
@@ -1247,19 +1248,23 @@
     @keyframes viewer-backdrop-enter { from { background: rgba(81, 0, 14, 0); backdrop-filter: blur(0); } to { background: rgba(81, 0, 14, .82); backdrop-filter: blur(5px); } }
     @keyframes viewer-backdrop-exit { from { background: rgba(81, 0, 14, .82); backdrop-filter: blur(5px); } to { background: rgba(81, 0, 14, 0); backdrop-filter: blur(0); } }
     @media (max-width: 760px) {
+      
       .step p { font-size: 17px; }
     }
     @media (max-width: 440px) {
       .footer-links { width: min(100%, 300px); align-items: stretch; }
-      .footer-links .contact-icons { width: 100%; justify-content: center; }
+      .footer-links .contact-icons { width: 100%; justify-content: left; }
       .footer-links > a { width: 100%; text-align: center; }
     }
   </style>
 
 <style>
 
+
+
   /* Мобильные исправления: шапка, чек-лист, кнопки и подвал */
   @media (max-width: 700px) {
+
     .container { width: calc(100% - 32px); }
     .nav {
       min-width: 0;
@@ -1356,7 +1361,9 @@
             <a class="button" href="#contact">Обсудить ситуацию
               <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </a>
-            <a class="text-link" href="#services">Посмотреть услуги <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <div class="hero-cta" style="margin-left: 12px;">
+              <a class="text-link" href="#services">Посмотреть услуги <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            </div>
           </div>
           <div class="hero-facts">
             <span><i class="check-dot" aria-hidden="true">✓</i> Более 3 лет практики</span>
@@ -1800,10 +1807,12 @@
 </svg>
 </a>
         </span>
+        <div class="footer-links-mobile">
         <nav class="footer-links-pages">
         <a href="privacy.html">Политика конфиденциальности</a><br>
         <a href="https://atarovart.com" target="_blank" rel="noopener noreferrer">Разработка сайта: atarovart.com</a>
         </nav>
+        </div>
       </nav>
     </div>
   </footer>
